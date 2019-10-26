@@ -20,6 +20,7 @@ public class PlantingMenuController : MonoBehaviour
     GameObject vegetablePref;
     GameObject bed;
     int profitOfVeg;
+    int clickProfitOfVeg;
     int numberOfVegetable;
 
     void Start()
@@ -45,7 +46,7 @@ public class PlantingMenuController : MonoBehaviour
             bttn.GetComponent<VegetableIdentifier>().name = vegs[i].nameOfVeg;
             bttn.GetComponent<VegetableIdentifier>().profit = vegs[i].profit;
             bttn.GetComponent<VegetableIdentifier>().serialNumberOfVegetable = i;
-
+            bttn.GetComponent<VegetableIdentifier>().clickProfit = vegs[i].clickProfit;
         }
     }
 
@@ -74,6 +75,7 @@ public class PlantingMenuController : MonoBehaviour
                  //   Debug.Log(result.gameObject.GetComponent<VegetableIdentifier>().name);
                     isStartPlanting = true;
                     profitOfVeg = result.gameObject.GetComponent<VegetableIdentifier>().profit;
+                    clickProfitOfVeg = result.gameObject.GetComponent<VegetableIdentifier>().clickProfit;
                     vegetablePref = result.gameObject.GetComponent<VegetableIdentifier>().vegetablePrefab;
                     numberOfVegetable = result.gameObject.GetComponent<VegetableIdentifier>().serialNumberOfVegetable;
                 }
@@ -98,8 +100,13 @@ public class PlantingMenuController : MonoBehaviour
                 {
                     if (!isSomethingGrowing(objectHit.gameObject))
                     {
-                        objectHit.gameObject.GetComponent<VegetablesSpawner>().SpawnVegatables(vegetablePref, objectHit.transform, profitOfVeg);
-                        objectHit.gameObject.GetComponent<VegetablesSpawner>().profit = profitOfVeg;
+                        objectHit.gameObject.GetComponent<VegetablesSpawner>().SpawnVegatables(
+                            vegetablePref, 
+                            objectHit.transform, 
+                            profitOfVeg,
+                            clickProfitOfVeg
+                        );
+                        //objectHit.gameObject.GetComponent<VegetablesSpawner>().profit = profitOfVeg;
                         objectHit.gameObject.GetComponent<VegetablesSpawner>().FindBedAndSave(numberOfVegetable);
 
                     }

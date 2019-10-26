@@ -7,7 +7,8 @@ public class ProfitGenerator : MonoBehaviour
     public GameObject vegPrefab;
     public Transform bed;
     public int profit;
-    // Start is called before the first frame update
+    public int clickProfit;
+
     void Start()
     {
         StartCoroutine(EndlessProfit());
@@ -24,5 +25,10 @@ public class ProfitGenerator : MonoBehaviour
             ProfitController.I.Coins += profit;
             yield return new WaitForSeconds(2f);
         }
+    }
+
+    public void Click()
+    {
+        ProfitController.I.Coins += clickProfit;
     }
 }

@@ -16,4 +16,7 @@ public class Vegetable : ScriptableObject
 
     [SerializeField]
     public int profit;
+
+    [SerializeField]
+    public int clickProfit;
 }

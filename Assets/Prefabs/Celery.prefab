@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8904394843074080208}
   - component: {fileID: 3095138135745593851}
   - component: {fileID: -4413549330400165919}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: Celery
   m_TagString: Untagged
   m_Icon: {fileID: 0}

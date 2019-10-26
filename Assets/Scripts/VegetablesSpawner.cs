@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class VegetablesSpawner : MonoBehaviour
 {
-    public int profit;
-
-    void Start()
-    {
-      
-    }
-
+    ProfitGenerator pg;
     public int WhoAMI()
     {
         AlreadyExistedVegetablesSpawner parent = this.GetComponentInParent<AlreadyExistedVegetablesSpawner>();
@@ -25,7 +19,7 @@ public class VegetablesSpawner : MonoBehaviour
         return 0;
     }
     
-    public void SpawnVegatables(GameObject prefab, Transform parent, int profit)
+    public void SpawnVegatables(GameObject prefab, Transform parent, int profit, int clickProfit)
     {
         GameObject veg = new GameObject();
         float xP = -2.5f;
@@ -41,11 +35,11 @@ public class VegetablesSpawner : MonoBehaviour
             zP -= 3f;
             xP = -2.5f;
         }
-        veg.AddComponent<ProfitGenerator>();
-        veg.GetComponent<ProfitGenerator>().vegPrefab = prefab;
-        veg.GetComponent<ProfitGenerator>().bed = parent;
-        veg.GetComponent<ProfitGenerator>().profit = profit;
-        
+        pg = veg.AddComponent<ProfitGenerator>();
+        pg.vegPrefab = prefab;
+        pg.bed = parent;
+        pg.profit = profit;
+        pg.clickProfit = clickProfit;
     }
 
     public void FindBedAndSave(int numberOfVegetable)
@@ -54,7 +48,8 @@ public class VegetablesSpawner : MonoBehaviour
         Debug.Log("bed - " + WhoAMI() + "; veg - " + numberOfVegetable);
     }
 
-   
-
-
+    public void OnMouseDown()
+    {
+        pg.Click();
+    }
 }

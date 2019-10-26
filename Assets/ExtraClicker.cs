@@ -27,7 +27,7 @@ public class ExtraClicker : MonoBehaviour
                 {
                     if (isSomethingGrowing(objectHit.gameObject))
                     {
-                        ProfitController.I.Coins += objectHit.gameObject.GetComponent<VegetablesSpawner>().profit;
+                        //ProfitController.I.Coins += objectHit.gameObject.GetComponent<VegetablesSpawner>().profit;
                         Debug.Log("extra profit");
                     }
                 }

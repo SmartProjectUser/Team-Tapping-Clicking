@@ -69,7 +69,6 @@ public class UIController : MonoBehaviour
     {
         Vector3 p = Camera.main.WorldToScreenPoint(pos);
         GameObject g = Instantiate(Singleton.profitText, Singleton.transform);
-        Debug.Log(p);
         g.GetComponent<RectTransform>().position = p;
         g.GetComponent<Text>().text = profit.ToString();
     }

@@ -22,15 +22,20 @@ public class ProfitGenerator : MonoBehaviour
         {
             // int number = Random.Range(0, count);
             // GameObject harvest = Instantiate(vegPrefab, vegs[number].transform);
-            ProfitController.I.Coins += profit;
-            UIController.ShowProfit(transform.position, profit);
-            yield return new WaitForSeconds(2f);
+            MakeCoins((int)(profit * BoostersController.PassiveMultiplier()));
+            yield return new WaitForSeconds(5f);
         }
     }
 
     public void Click()
     {
-        ProfitController.I.Coins += clickProfit;
-        UIController.ShowProfit(transform.position, clickProfit);
+        MakeCoins((int)(clickProfit * BoostersController.ActiveMultiplier()));
+    }
+
+    private void MakeCoins(int coins)
+    {
+        ProfitController.I.Coins += coins;
+        if (coins > 0)
+            UIController.ShowProfit(transform.position, coins);
     }
 }

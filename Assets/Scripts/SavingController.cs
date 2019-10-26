@@ -46,4 +46,24 @@ public class SavingController : MonoBehaviour
     {
         return PlayerPrefs.GetInt("plants", 1);
     }
+
+    public void WritePassiveBoosts(int passiveBoosts)
+    {
+        PlayerPrefs.SetInt("passiveBoosts", passiveBoosts);
+    }
+
+    public int ReadPassiveBoosts()
+    {
+        return PlayerPrefs.GetInt("passiveBoosts", 0);
+    }
+
+    public void WriteActiveBoosts(int activeBoosts)
+    {
+        PlayerPrefs.SetInt("activeBoosts", activeBoosts);
+    }
+
+    public int ReadActiveBoosts()
+    {
+        return PlayerPrefs.GetInt("activeBoosts", 0);
+    }
 }

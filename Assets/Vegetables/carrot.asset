@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3757c6796da79744f9b68b8cc2417405, type: 3}
   m_Name: carrot
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  name: 
+  prefab: {fileID: 3471345518768763580, guid: a9169fbf889719048bb945a964f71b17, type: 3}
+  nameOfVeg: 
+  img: {fileID: 21300000, guid: 603e8c2e8696d8e44b98341f9f34af2c, type: 3}
+  profit: 2

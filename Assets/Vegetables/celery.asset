@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3757c6796da79744f9b68b8cc2417405, type: 3}
-  m_Name: banana
+  m_Name: celery
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  name: 
+  prefab: {fileID: 5930428554162488079, guid: 5f375cc4498ca2441a0a939e4c4bef4d, type: 3}
+  nameOfVeg: 
+  img: {fileID: 21300000, guid: b319fb6d132f984478fa4d94180cd3e4, type: 3}
+  profit: 3

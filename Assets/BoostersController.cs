@@ -25,7 +25,7 @@ public class BoostersController : MonoBehaviour
 
     public void BuyActiveMultiplier()
     {
-        activeProfitMultiplier += 1;
+       // activeProfitMultiplier += 1;
 
     }
 

@@ -12,7 +12,7 @@ public class BoosterUI : MonoBehaviour
 
     public void SetValues()
     {
-        activeBooster.text = "active multiplier: x1 \n " + BoostersController.I.costOfActiveProfit.ToString();
+      //  activeBooster.text = "active multiplier: x1 \n " + BoostersController.I.costOfActiveProfit.ToString();
     }
 
     

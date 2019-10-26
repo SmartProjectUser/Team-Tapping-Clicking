@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3757c6796da79744f9b68b8cc2417405, type: 3}
   m_Name: berry
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  name: 
+  prefab: {fileID: 5534832831073021084, guid: 35b472db89c463f4eaae309d99ba524d, type: 3}
+  nameOfVeg: 
+  img: {fileID: 21300000, guid: 6fb5d27c1f317fd48832a0c2880dea78, type: 3}
+  profit: 4

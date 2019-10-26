@@ -37,8 +37,5 @@ public class SavingController : MonoBehaviour
         }
     }
 
-    public void ReadBoosters()
-    {
-        BoostersController.I
-    }
+
 }

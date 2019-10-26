@@ -27,13 +27,13 @@ public class UIController : MonoBehaviour
 
     public void OpenPlantingMenu()
     {
-        CloseAll();
+        CloseTabs();
         plantingMenu.SetActive(true);
     }
 
     public void OpenDeletingMenu()
     {
-        CloseAll();
+        CloseTabs();
         deletingMenu.SetActive(true);
     }
 
@@ -45,7 +45,7 @@ public class UIController : MonoBehaviour
 
     public void OpenBoosterMenu()
     {
-        CloseAll();
+        CloseTabs();
         boostersMenu.SetActive(true);
     }
 
@@ -53,6 +53,13 @@ public class UIController : MonoBehaviour
     {
         plantingMenu.SetActive(false);
         lowerMenu.SetActive(false);
+        deletingMenu.SetActive(false);
+        boostersMenu.SetActive(false);
+    }
+
+    void CloseTabs()
+    {
+        plantingMenu.SetActive(false);
         deletingMenu.SetActive(false);
         boostersMenu.SetActive(false);
     }

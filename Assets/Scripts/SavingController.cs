@@ -5,8 +5,11 @@ using UnityEngine;
 public class SavingController : MonoBehaviour
 {
     static public SavingController I;
-   
-    void Start()
+
+    public BoosterUI boosterUI;
+
+
+    void Awake()
     {
         I = this;
     }
@@ -32,5 +35,10 @@ public class SavingController : MonoBehaviour
         {
 
         }
+    }
+
+    public void ReadBoosters()
+    {
+        BoostersController.I
     }
 }

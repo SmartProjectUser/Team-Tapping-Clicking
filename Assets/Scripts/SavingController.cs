@@ -37,5 +37,13 @@ public class SavingController : MonoBehaviour
         }
     }
 
+    public void WritePlants(int plantsOpened)
+    {
+        PlayerPrefs.SetInt("plants", plantsOpened);
+    }
 
+    public int ReadPlants()
+    {
+        return PlayerPrefs.GetInt("plants", 1);
+    }
 }

@@ -25,6 +25,7 @@ public class PlantingMenuController : MonoBehaviour
 
     void Start()
     {
+        //PlayerPrefs.DeleteAll();
         CreateListOfVegetables();
         m_Raycaster = GetComponent<GraphicRaycaster>();
         m_EventSystem = GetComponent<EventSystem>();
@@ -37,8 +38,15 @@ public class PlantingMenuController : MonoBehaviour
 
     public void CreateListOfVegetables()
     {
+        for(int i=0; i < content.childCount; i++)
+        {
+            Destroy(content.GetChild(i).gameObject);
+        }
+
         List<Vegetable> vegs = VegetableController.I.vegetables;
-        for(int i = 0; i < vegs.Count; i++)
+        int openedPlants = VegetableController.I.OpenedPlants;
+        int from = Mathf.Max(0, openedPlants - 4);
+        for (int i = from; i < openedPlants; i++)
         {
             Button bttn = Instantiate(vegBttn, content);
             bttn.GetComponent<Image>().sprite = vegs[i].img;

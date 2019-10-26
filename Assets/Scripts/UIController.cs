@@ -29,6 +29,7 @@ public class UIController : MonoBehaviour
     {
         CloseTabs();
         plantingMenu.SetActive(true);
+        plantingMenu.GetComponent<PlantingMenuController>().CreateListOfVegetables();
     }
 
     public void OpenDeletingMenu()

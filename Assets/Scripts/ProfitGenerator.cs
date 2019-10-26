@@ -23,6 +23,7 @@ public class ProfitGenerator : MonoBehaviour
             // int number = Random.Range(0, count);
             // GameObject harvest = Instantiate(vegPrefab, vegs[number].transform);
             ProfitController.I.Coins += profit;
+            UIController.ShowProfit(transform.position, profit);
             yield return new WaitForSeconds(2f);
         }
     }
@@ -30,5 +31,6 @@ public class ProfitGenerator : MonoBehaviour
     public void Click()
     {
         ProfitController.I.Coins += clickProfit;
+        UIController.ShowProfit(transform.position, clickProfit);
     }
 }

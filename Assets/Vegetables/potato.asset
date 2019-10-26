@@ -16,3 +16,4 @@ MonoBehaviour:
   nameOfVeg: 
   img: {fileID: 21300000, guid: 4162d2b1b9afa054aaa69b2ac07676f0, type: 3}
   profit: 1
+  clickProfit: 1

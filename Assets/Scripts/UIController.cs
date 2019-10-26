@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
@@ -8,6 +9,15 @@ public class UIController : MonoBehaviour
     public GameObject lowerMenu;
     public GameObject deletingMenu;
     public GameObject boostersMenu;
+
+    public GameObject profitText;
+
+    public static UIController Singleton;
+
+    public void Awake()
+    {
+        Singleton = this;
+    }
 
     private void Update()
     {
@@ -45,5 +55,14 @@ public class UIController : MonoBehaviour
         lowerMenu.SetActive(false);
         deletingMenu.SetActive(false);
         boostersMenu.SetActive(false);
+    }
+
+    public static void ShowProfit(Vector3 pos, int profit)
+    {
+        Vector3 p = Camera.main.WorldToScreenPoint(pos);
+        GameObject g = Instantiate(Singleton.profitText, Singleton.transform);
+        Debug.Log(p);
+        g.GetComponent<RectTransform>().position = p;
+        g.GetComponent<Text>().text = profit.ToString();
     }
 }

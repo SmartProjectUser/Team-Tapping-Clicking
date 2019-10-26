@@ -592,7 +592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62279a423b0834d4c9056d1c34b7855c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profit: 0
 --- !u!1 &230482585
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62279a423b0834d4c9056d1c34b7855c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profit: 0
 --- !u!114 &230482591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1714,7 +1712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62279a423b0834d4c9056d1c34b7855c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profit: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2798,6 +2795,8 @@ MonoBehaviour:
   lowerMenu: {fileID: 63439211}
   deletingMenu: {fileID: 539864918}
   boostersMenu: {fileID: 428881814}
+  profitText: {fileID: 5396691557263465841, guid: 8a9a91b4a6b4cd34d8bfb523ca4e29b6,
+    type: 3}
 --- !u!1 &1429267666
 GameObject:
   m_ObjectHideFlags: 0
@@ -2953,7 +2952,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62279a423b0834d4c9056d1c34b7855c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profit: 0
 --- !u!1 &1640637994
 GameObject:
   m_ObjectHideFlags: 0

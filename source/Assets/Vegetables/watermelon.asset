@@ -15,5 +15,5 @@ MonoBehaviour:
   prefab: {fileID: 721613490986455907, guid: a312bc41c3fd4654da20f381eb33a07b, type: 3}
   nameOfVeg: strawberry
   img: {fileID: 21300000, guid: ca3ba8f14389e75419df3a0f5e100186, type: 3}
-  profit: 200
-  clickProfit: 400
+  profit: 500
+  clickProfit: 150

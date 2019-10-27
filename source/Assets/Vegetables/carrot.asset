@@ -15,5 +15,5 @@ MonoBehaviour:
   prefab: {fileID: 7914761252890650742, guid: d31e18970975e974cabcf6fa447a792d, type: 3}
   nameOfVeg: corn
   img: {fileID: 21300000, guid: 0027e34b52da37e4f846f76657c65898, type: 3}
-  profit: 2
-  clickProfit: 200
+  profit: 4
+  clickProfit: 2

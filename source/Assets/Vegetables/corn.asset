@@ -15,5 +15,5 @@ MonoBehaviour:
   prefab: {fileID: 1083874081222013283, guid: e480fc8277471084d884f8bbec4eadc3, type: 3}
   nameOfVeg: onion
   img: {fileID: 21300000, guid: 5efd203653c772140835bcd6cfd00353, type: 3}
-  profit: 7
-  clickProfit: 7
+  profit: 64
+  clickProfit: 25

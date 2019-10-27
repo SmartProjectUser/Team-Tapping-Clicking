@@ -493,7 +493,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e79b2f7a497ac994588b0e202f5e9f48, type: 2}
   - {fileID: 11400000, guid: 797bd5af23dae3a4997783ee24dd6c9c, type: 2}
   - {fileID: 11400000, guid: 4b7965df2552ec945a6d2dd933cadde4, type: 2}
-  prices: 19000000320000004b0000007d000000c80000002c010000f4010000ee020000e2040000d0070000
+  prices: 190000006400000090010000e8030000c409000070170000983a00003075000050c30000c0d40100
 --- !u!1 &218097067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,29 +2002,29 @@ MonoBehaviour:
   clickBoosters:
   - price: 0
     multiplier: 1
-  - price: 10
-    multiplier: 1.5
-  - price: 25
-    multiplier: 2
   - price: 100
-    multiplier: 2.5
-  - price: 250
-    multiplier: 3
+    multiplier: 2
   - price: 500
+    multiplier: 3
+  - price: 2500
+    multiplier: 4
+  - price: 10000
+    multiplier: 8
+  - price: 20000
     multiplier: 4
   passiveBoosters:
   - price: 0
-    multiplier: 0
-  - price: 50
     multiplier: 1
-  - price: 250
-    multiplier: 1.25
-  - price: 500
-    multiplier: 1.5
-  - price: 750
+  - price: 50
     multiplier: 2
-  - price: 1500
+  - price: 300
     multiplier: 3
+  - price: 1500
+    multiplier: 4
+  - price: 4000
+    multiplier: 6
+  - price: 20000
+    multiplier: 10
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

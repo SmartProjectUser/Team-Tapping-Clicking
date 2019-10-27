@@ -15,5 +15,5 @@ MonoBehaviour:
   prefab: {fileID: 275808985475888216, guid: 1fdc725b091444b458e65e2a778323b5, type: 3}
   nameOfVeg: chilly
   img: {fileID: 21300000, guid: 0a75e19c8737534438c2293eff5ce235, type: 3}
-  profit: 3
-  clickProfit: 5
+  profit: 16
+  clickProfit: 3

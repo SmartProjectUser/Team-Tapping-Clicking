@@ -16,4 +16,4 @@ MonoBehaviour:
   nameOfVeg: leek
   img: {fileID: 21300000, guid: 99f8abb574ed3ac4f8995891a0e6d9cb, type: 3}
   profit: 4
-  clickProfit: 100
+  clickProfit: 1

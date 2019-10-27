@@ -15,5 +15,5 @@ MonoBehaviour:
   prefab: {fileID: 592155219054342612, guid: 848317565d5c7cd42a379d2b16cb09a9, type: 3}
   nameOfVeg: lettuce
   img: {fileID: 21300000, guid: ee21fb59985d36a46b6acfe9d714abf7, type: 3}
-  profit: 64
-  clickProfit: 64
+  profit: 20
+  clickProfit: 100

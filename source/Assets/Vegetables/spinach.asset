@@ -15,5 +15,5 @@ MonoBehaviour:
   prefab: {fileID: 573790142554760594, guid: 53188daadbddc994e80f37cac673332b, type: 3}
   nameOfVeg: pumpkin
   img: {fileID: 21300000, guid: 0882ee927299c9b4f96d6c86bec33c13, type: 3}
-  profit: 100
-  clickProfit: 120
+  profit: 250
+  clickProfit: 100

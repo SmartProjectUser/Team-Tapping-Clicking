@@ -15,5 +15,5 @@ MonoBehaviour:
   prefab: {fileID: 6358344365390104097, guid: 42d4708c17cd6014f9142d5639b73398, type: 3}
   nameOfVeg: aubergine
   img: {fileID: 21300000, guid: 88ec6ecd0b5c6ba40b11318ee831bb35, type: 3}
-  profit: 16
-  clickProfit: 32
+  profit: 40
+  clickProfit: 10

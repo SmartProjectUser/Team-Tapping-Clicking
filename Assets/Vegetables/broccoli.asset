@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3757c6796da79744f9b68b8cc2417405, type: 3}
   m_Name: broccoli
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5930428554162488079, guid: 5f375cc4498ca2441a0a939e4c4bef4d, type: 3}
-  nameOfVeg: broccoli
+  prefab: {fileID: 3106513515219900808, guid: 42d4708c17cd6014f9142d5639b73398, type: 3}
+  nameOfVeg: aubergine
   img: {fileID: 21300000, guid: 0902f86738696b349b27d0b96a9070cc, type: 3}
   profit: 16
   clickProfit: 32

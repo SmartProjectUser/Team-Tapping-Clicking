@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3757c6796da79744f9b68b8cc2417405, type: 3}
   m_Name: watermelon
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5534832831073021084, guid: 35b472db89c463f4eaae309d99ba524d, type: 3}
-  nameOfVeg: watermelon
+  prefab: {fileID: 8728612368615886026, guid: a312bc41c3fd4654da20f381eb33a07b, type: 3}
+  nameOfVeg: strawberry
   img: {fileID: 21300000, guid: 8b91989959b9ad94ca801b1d34a2a23c, type: 3}
   profit: 200
   clickProfit: 400

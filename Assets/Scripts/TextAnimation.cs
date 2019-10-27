@@ -14,7 +14,7 @@ public class TextAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.up * Time.deltaTime * 80f);
+        transform.Translate(Vector3.up * Time.deltaTime * 250f);
         t += Time.deltaTime;
         if (t > 5)
             Destroy(gameObject);

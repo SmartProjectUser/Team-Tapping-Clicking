@@ -5,6 +5,28 @@ using UnityEngine;
 public class VegetablesSpawner : MonoBehaviour
 {
     ProfitGenerator pg;
+
+
+    private void Start()
+    {
+        SpawnVegAfterStart();
+    }
+
+    public void SpawnVegAfterStart()
+    {
+        int numberOfBed = WhoAMI();
+        int numberIfVegetable = PlayerPrefs.GetInt("bed" + numberOfBed, -1);
+        if(numberIfVegetable != -1)
+        {
+            GameObject pref = VegetableController.I.vegetables[numberIfVegetable].prefab;
+           // Transform parentForVeg = this.transform;
+            int prof = VegetableController.I.vegetables[numberIfVegetable].profit;
+            int clickProf = VegetableController.I.vegetables[numberIfVegetable].clickProfit;
+            SpawnVegatables(pref, this.transform, prof, clickProf);
+        }
+    }
+
+
     public int WhoAMI()
     {
         AlreadyExistedVegetablesSpawner parent = this.GetComponentInParent<AlreadyExistedVegetablesSpawner>();
@@ -46,6 +68,7 @@ public class VegetablesSpawner : MonoBehaviour
     {
         SavingController.I.SaveBeds(WhoAMI(), numberOfVegetable);
         Debug.Log("bed - " + WhoAMI() + "; veg - " + numberOfVegetable);
+        Debug.Log("read player: bed - " + WhoAMI() + "veg - " + PlayerPrefs.GetInt("bed" + WhoAMI(), -2));
     }
 
     public void OnMouseDown()

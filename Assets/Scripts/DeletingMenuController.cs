@@ -46,9 +46,9 @@ public class DeletingMenuController : MonoBehaviour
 
             foreach (RaycastResult result in results)
             {
-                if (result.gameObject.GetComponent<DeleteDetector>())
+                if (result.gameObject.GetComponent<DeleteDetectorII>())
                 {
-                    Debug.Log(result.gameObject.GetComponent<DeleteDetector>().name);
+                    Debug.Log(result.gameObject.GetComponent<DeleteDetectorII>().name);
                     isProcessDeletingStart = true;
                 }
             }
@@ -78,9 +78,13 @@ public class DeletingMenuController : MonoBehaviour
 
     void TryDeleteVegetables(GameObject bed)
     {
+        int numberOfBed = bed.GetComponent<VegetablesSpawner>().WhoAMI();
+        PlayerPrefs.SetInt("bed" + numberOfBed, -1);
+
         VegetableDetector[] vegs = bed.GetComponentsInChildren<VegetableDetector>();
         foreach(VegetableDetector veg in vegs)
         {
+            Debug.Log("DELETINGGG");
             Destroy(veg.gameObject);
         }
     }

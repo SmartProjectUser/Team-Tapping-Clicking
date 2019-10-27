@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3757c6796da79744f9b68b8cc2417405, type: 3}
   m_Name: pepper
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3471345518768763580, guid: a9169fbf889719048bb945a964f71b17, type: 3}
-  nameOfVeg: pepper
+  prefab: {fileID: 8869328324827967101, guid: 848317565d5c7cd42a379d2b16cb09a9, type: 3}
+  nameOfVeg: lettuce
   img: {fileID: 21300000, guid: 7d15c4f96a9b6e24ebca465bac33c99a, type: 3}
   profit: 64
   clickProfit: 64

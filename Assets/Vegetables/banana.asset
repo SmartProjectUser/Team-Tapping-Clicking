@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3757c6796da79744f9b68b8cc2417405, type: 3}
   m_Name: banana
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3471345518768763580, guid: a9169fbf889719048bb945a964f71b17, type: 3}
-  nameOfVeg: banana
-  img: {fileID: 21300000, guid: 28eb0a8db6791b142bcd375c78eaa1c4, type: 3}
+  prefab: {fileID: 8428958740211881792, guid: 5fcd6f3935515b04f89d2f797e33f6de, type: 3}
+  nameOfVeg: carrot
+  img: {fileID: 21300000, guid: d2e47b3498720384397d7a2eea74d8bb, type: 3}
   profit: 5
   clickProfit: 5

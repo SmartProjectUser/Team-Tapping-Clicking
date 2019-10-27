@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3757c6796da79744f9b68b8cc2417405, type: 3}
   m_Name: spinach
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5930428554162488079, guid: 5f375cc4498ca2441a0a939e4c4bef4d, type: 3}
-  nameOfVeg: spinach
+  prefab: {fileID: 8419319036287269435, guid: 53188daadbddc994e80f37cac673332b, type: 3}
+  nameOfVeg: pumpkin
   img: {fileID: 21300000, guid: d3b8e4a39dd180b4999e555df24344b1, type: 3}
   profit: 100
   clickProfit: 120

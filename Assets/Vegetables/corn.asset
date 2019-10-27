@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3757c6796da79744f9b68b8cc2417405, type: 3}
   m_Name: corn
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3471345518768763580, guid: a9169fbf889719048bb945a964f71b17, type: 3}
-  nameOfVeg: corn
+  prefab: {fileID: 8947346985324867274, guid: e480fc8277471084d884f8bbec4eadc3, type: 3}
+  nameOfVeg: onion
   img: {fileID: 21300000, guid: 5f45725a0043655469dac9093f3dc369, type: 3}
   profit: 7
   clickProfit: 7

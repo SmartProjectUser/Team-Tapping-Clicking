@@ -78,6 +78,8 @@ public class BoosterUI : MonoBehaviour
             {
                 int newprice = VegetableController.I.prices[VegetableController.I.OpenedPlants];
                 newVegetable.text = "Buy vegetable\n$" + newprice.ToString();
+                ProfitController.I.sourc.clip = ProfitController.I.ups;
+                ProfitController.I.sourc.Play();
             } else
             {
                 newVegetable.transform.parent.gameObject.SetActive(false);
@@ -102,6 +104,8 @@ public class BoosterUI : MonoBehaviour
                     newboost.multiplier,
                     newprice
                 );
+                ProfitController.I.sourc.clip = ProfitController.I.ups;
+                ProfitController.I.sourc.Play();
             }
             else
             {
@@ -131,6 +135,8 @@ public class BoosterUI : MonoBehaviour
                     newboost.multiplier,
                     newprice
                 );
+                ProfitController.I.sourc.clip = ProfitController.I.ups;
+                ProfitController.I.sourc.Play();
             }
             else
             {

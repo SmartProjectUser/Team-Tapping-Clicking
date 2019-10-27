@@ -1859,6 +1859,7 @@ MonoBehaviour:
   posadka: {fileID: 8300000, guid: ae9be87b4e2b6f346900948f124c9541, type: 3}
   sourc: {fileID: 835865823}
   dele: {fileID: 8300000, guid: b3835dd33b05dba419c23d90e6c5649d, type: 3}
+  ups: {fileID: 8300000, guid: 1ebe0e354522f9945ac710822cb58d1d, type: 3}
 --- !u!82 &835865823
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2011,7 +2012,7 @@ MonoBehaviour:
   - price: 10000
     multiplier: 8
   - price: 20000
-    multiplier: 4
+    multiplier: 16
   passiveBoosters:
   - price: 0
     multiplier: 1

@@ -10,6 +10,7 @@ public class ProfitController : MonoBehaviour
     public AudioClip posadka;
     public AudioSource sourc;
     public AudioClip dele;
+    public AudioClip ups;
 
 
     private int coins;

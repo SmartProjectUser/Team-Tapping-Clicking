@@ -87,5 +87,7 @@ public class DeletingMenuController : MonoBehaviour
         {
             Destroy(veg.gameObject);
         }
+        ProfitController.I.sourc.clip = ProfitController.I.dele;
+        ProfitController.I.sourc.Play();
     }
 }

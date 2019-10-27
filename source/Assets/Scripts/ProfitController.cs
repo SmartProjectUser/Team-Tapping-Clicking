@@ -6,6 +6,12 @@ public class ProfitController : MonoBehaviour
 {
     public CoinsUIController coinsCntrllrUI;
 
+    public AudioClip bulk;
+    public AudioClip posadka;
+    public AudioSource sourc;
+    public AudioClip dele;
+
+
     private int coins;
     public int Coins
     {
@@ -27,5 +33,6 @@ public class ProfitController : MonoBehaviour
     {
         I = this;
         Coins = SavingController.I.ReadCoins();
+        sourc.GetComponent<AudioSource>();
     }
 }

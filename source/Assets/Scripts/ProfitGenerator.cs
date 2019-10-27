@@ -9,6 +9,7 @@ public class ProfitGenerator : MonoBehaviour
     public int profit;
     public int clickProfit;
 
+
     void Start()
     {
         StartCoroutine(EndlessProfit());
@@ -30,6 +31,8 @@ public class ProfitGenerator : MonoBehaviour
     public void Click()
     {
         MakeCoins((int)(clickProfit * BoostersController.ActiveMultiplier()));
+        ProfitController.I.sourc.clip = ProfitController.I.bulk;
+        ProfitController.I.sourc.Play();
     }
 
     private void MakeCoins(int coins)

@@ -62,6 +62,9 @@ public class VegetablesSpawner : MonoBehaviour
         pg.bed = parent;
         pg.profit = profit;
         pg.clickProfit = clickProfit;
+        ProfitController.I.sourc.clip = ProfitController.I.posadka;
+        ProfitController.I.sourc.Play();
+
     }
 
     public void FindBedAndSave(int numberOfVegetable)

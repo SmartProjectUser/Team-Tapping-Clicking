@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3757c6796da79744f9b68b8cc2417405, type: 3}
+  m_Name: celery
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 275808985475888216, guid: 1fdc725b091444b458e65e2a778323b5, type: 3}
+  nameOfVeg: chilly
+  img: {fileID: 21300000, guid: 0a75e19c8737534438c2293eff5ce235, type: 3}
+  profit: 3
+  clickProfit: 5
